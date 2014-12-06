@@ -24,7 +24,7 @@ lines(data.set$Date.Time,data.set$Sub_metering_1, type = "l")
 lines(data.set$Date.Time,data.set$Sub_metering_2, type = "l",col="red")
 lines(data.set$Date.Time,data.set$Sub_metering_3, type = "l",col="blue")
 legend("topright", bty = "n", lty = 1, col = c("black","red","blue"),
-       legend = names(data.set[6:8]))
+       legend = names(data.set[6:8]),cex=0.9)
 axis(side=2,lwd=2)
 
 plot(data.set$Date.Time, data.set$Voltage, type = "l"
